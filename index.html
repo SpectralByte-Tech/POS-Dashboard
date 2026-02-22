@@ -10,6 +10,12 @@
     <main>
         <section id="sales">
             <h2>Today's Sales</h2>
+            <form id="sale-form">
+    <input type="text" id="item" placeholder="Item name" required>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <button type="submit">Add Sale</button>
+            </form>
             <table id="sales-table">
                 <tr><th>Item</th><th>Quantity</th><th>Price</th></tr>
             </table>
