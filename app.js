@@ -22,3 +22,13 @@ inventory.forEach(item => {
     li.innerText = item;
     inventoryList.appendChild(li);
 });
+
+// Calculate total revenue
+let total = 0;
+sales.forEach(s => {
+    total += s.qty * s.price;
+});
+
+const totalDiv = document.createElement("h2");
+totalDiv.innerText = "Total Revenue: " + total;
+document.body.appendChild(totalDiv);
